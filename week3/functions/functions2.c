@@ -1,0 +1,27 @@
+/**
+ * ascii1.c - Upper case conversion
+ *
+ * CS50 | Section 1 | Week 3
+ *
+ * thanks to Eric Ouyang Frederick Widjaja
+ * 
+ *  =+
+ * 
+ */
+ 
+#include <stdio.h>
+#include <cs50.h>
+#include <string.h>
+
+// capitalize a given lower case letter
+
+int main(void)
+{
+    char str[] = "computers";
+    for (int i = 0, j = strlen(str); i < j; i++)
+    {
+        // capitalize the ith letter and replace the element in the array
+        str[i] = capitalize(str[i]);
+    }
+    printf("%s\n", str);
+}
